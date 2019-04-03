@@ -1,0 +1,89 @@
+body,html{
+	height: 100%;
+	width: 100%;
+}
+.bodymax{
+	background-image: url("./images/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  display: block;
+  width: 100vw;
+  height: 100vh;
+
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.flexbox{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 2
+}
+
+.container{
+	display: flex;
+	flex-wrap:  wrap;
+	justify-content: center;
+	position: fixed;
+  left: 0;
+  right: 0;
+  top: 140px;
+  z-index: 4;
+}
+
+.image{
+	width: 400px;
+	height: 250px;
+	border-radius: 10px;
+	margin:10px;
+	transition: all 1s;
+
+}
+.imagecontainer{
+	position: relative;
+	transition: all 1s;
+}
+
+.imagecontainer:hover{
+	transform: scale(1.2,1.2);
+	z-index: 4;
+}
+
+
+
+.overlay{
+	display: none;
+}
+.imagecontainer:hover > .overlay{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	border-radius: 10px;
+	margin:10px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 5;
+}	
+
+.white-text{
+	padding: 0px 20px;
+	color: white;
+	font-family: 'Iceberg', cursive;
+	text-align:justify;
+}
+
